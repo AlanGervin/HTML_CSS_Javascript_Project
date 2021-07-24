@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/javascript.js" defer></script>
+    <style>
+        th{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="margin: auto; text-align: center;">
+            <a href="./home.html">HTML</a>
+            <a href="./css.html">CSS</a>
+            <a href="./javascript.html">JavaScript</a>
+        </nav>
+        <select name="mode" id="mode" onchange="modeChange()">
+            <option value="light">light</option>
+            <option value="dark">dark</option>
+        </select>
+        <h1>HTML</h1>
+
+    </header>
+
+    <section>
+        <p><strong>HTML</strong> is hypertext markup language and is used as the primary language of the internet and standard web pages along with CSS for styling and JavaScript for animation.
+        This page will go over some of the basic HTML features. Other sections of this site will cover some CSS and JavaScript.</p>
+    </section>
+    <div>
+        <table id="table">
+            <thead>
+                <th>Tag</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;p&gt; &lt;/p&gt;</td>
+                    <td>The p tag is used to write a paragraph. It is a block level element so it takes up the width of an entire page</td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt; &lt;/div&gt;</td>
+                    <td>The div tag is a block element used to create different sections on a page. It is also a block element</td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt; &lt;/span&gt;</td>
+                    <td>The span tag is used as an inline text element, this means that it will not take up the width of then entire page<br>
+                    it is used for lighiting text sometimes or short blerbs.</td>
+                </tr>
+                <tr>
+                    <td>&lt;img src="imageLocation" /&gt;</td>
+                    <td>The image tag can be used to display images like the following<br />
+                        <img src="./images/pexels-photo-4219212.jpeg" /><br />
+                        You can also use the img tag to dispay a gif like the following<br />
+                        <IMG SRC="./images/200w.webp">
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;video width="320" height="240" controls&gt; &lt;/video&gt;</td>
+                    <td>the video tag along with the source tag can be used to display video like the following <br />   
+                        <video width="320" height="240" controls>
+                        <source src="./images/movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                      </video></td>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;&lt;/form></td>
+                    <td>The form tag is used to collect data from a user. This form collects the name from a user and displays it in a span<br />
+                        <form id="nameForm"  action="#" onsubmit="displayName();return false">
+                            <input type="text" name="name" id="name" /> 
+                            <input type="submit" name="submit" id="submit" value="submit" />
+                        </form>
+                        <span id="nameDisplay"></span>
+                        <div style="border: 2px solid black;">
+                            sometimes you want users to only be able to choose one option instead of giving an input. you can use a select tag for that
+                            <form id="colorForm" action="#" onsubmit="colorPick();return false">
+                                <select name="color" id="color">
+                                    <option value="black">black</option>
+                                    <option value="white">white</option>
+                                </select>
+                                <input type="submit" name="submit" id="submit" value="submit" />
+                            </form>
+                            <span id="colorDisplay"></span>
+                        </div>
+                    </td>
+                </tr>
+           
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

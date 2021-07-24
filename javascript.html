@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/javascript.js" defer></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="margin: auto; text-align: center;">
+            <a href="./home.html">HTML</a>
+            <a href="./css.html">CSS</a>
+            <a href="./javascript.html">JavaScript</a>
+        </nav>
+        <select name="mode" id="mode" onchange="modeChange()">
+            <option value="light">light</option>
+            <option value="dark">dark</option>
+        </select>
+        <h1>JavaScript</h1>
+    </header>
+    <section>
+        <p>You can select elements in different ways in javascript. You can use id, class, element, attribute, psudoclass and more. I will cover a few of the options here</p>
+        <span id="id">This span was turned blue using the document.getElementById() and javascript and selected in CSS by ID and text decorated with line-through</span><br />
+        <span class="classExample">This span was turned red using document.getElementByClassName() and javascript and selected in CSS by class name and made font-size 18px</span><br />
+        <span alt="text italic because of alt attribute">italic text using the alt attribute with css</span>
+        <div>  
+        </div>
+        <span id="hover">this is orange because of css selector first child element but will turn blue on hover because of event listeners</span>
+        <p>The below list was generated using javascript array collection</p>
+        <div id="list"></div>
+        
+    </section>
+
+</body>
+</html>

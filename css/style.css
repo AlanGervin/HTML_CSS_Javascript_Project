@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*tag selector*/
+body{
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*psudo selector*/
+a:visited{
+    color: blue;
+}
+
+table, th, td{
+    border: 2px solid black;
+    padding: 4px;
+}
+
+/*id selector*/
+#id {
+    text-decoration: line-through;
+}
+
+/*class selector*/
+.classExample {
+    font-size: 18px;
+}
+
+/*attribute selector*/
+[alt]{
+    font-style: italic;
+}
+
+/*child selector*/
+div + span {
+    color:orange;
+}
